@@ -1,6 +1,5 @@
 const canvas = document.getElementById("canvas")
 const canvasContext = canvas.getContext('2d')
-var audio = new Audio("eat.mp3")
 
 window.onload = () => {
     gameLoop()
@@ -27,7 +26,6 @@ function eatApple() {
         snake.tail[snake.tail.length - 1].y == apple.y){
             snake.tail[snake.tail.length] = {x:apple.x, y: apple.y}
             apple = new Apple()
-            audio.play()
     }
     
 }
