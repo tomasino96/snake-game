@@ -26,7 +26,7 @@ function eatApple() {
     if(snake.tail[snake.tail.length - 1].x == apple.x &&
         snake.tail[snake.tail.length - 1].y == apple.y){
             snake.tail[snake.tail.length] = {x:apple.x, y: apple.y}
-            apple = new Apple();
+            apple = new Apple()
             audio.play()
     }
     
